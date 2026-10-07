@@ -12,7 +12,7 @@ Regra de cobrança:
 - Quem entra já paga o primeiro bloco (R$ 2,50), mesmo ficando poucos minutos.
 - Cada bloco de 15 minutos custa R$ 2,50 (R$ 10,00 por hora).
 - A tolerância de 5 minutos vale para o que passar de um bloco completo:
-  1h00 = R$ 10,00 | 1h05 = R$ 10,00 (tolerância) | 1h11 = R$ 12,50
+  1h00 = R$ 10,00 | 1h05 = R$ 10,00 (tolerância) | 1h06 = R$ 12,50
 """
 
 # =============================================================================
@@ -551,7 +551,7 @@ class App:
             f"A cada {MINUTOS_BLOCO} minutos: {moeda(VALOR_BLOCO)}\n"
             f"Hora cheia: {moeda(VALOR_BLOCO * 60 / MINUTOS_BLOCO)}\n\n"
             f"Tolerância: {TOLERANCIA_MIN} minutos sobre cada bloco completo.\n"
-            f"Ex.: 1h05 paga {moeda(4 * VALOR_BLOCO)}; 1h11 paga {moeda(5 * VALOR_BLOCO)}.")
+            f"Ex.: 1h05 paga {moeda(4 * VALOR_BLOCO)}; 1h06 paga {moeda(5 * VALOR_BLOCO)}.")
 
 
 # =============================================================================
