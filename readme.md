@@ -97,7 +97,7 @@ Assim que um veículo sai, a vaga volta a ficar verde, o contador do rodapé é 
 | 26 min      | R$ 5,00  | Passou da tolerância, entra o 2º bloco        |
 | 1h00        | R$ 10,00 | 4 blocos                                      |
 | 1h05        | R$ 10,00 | 4 blocos + 5 min dentro da tolerância         |
-| 1h11        | R$ 12,50 | Passou da tolerância, entra o 5º bloco        |
+| 1h06        | R$ 12,50 | Passou da tolerância, entra o 5º bloco        |
 
 Os valores ficam nas constantes no topo do código (`VALOR_BLOCO`, `MINUTOS_BLOCO` e `TOLERANCIA_MIN`), então é fácil ajustar a regra.
 
@@ -155,9 +155,3 @@ O `main.py` é organizado em seções comentadas: configurações, funções de 
 
 ---
 
-## 🔮 Próximos passos
-
-- Histórico de pagamentos e relatório de faturamento por dia
-- Banco de dados SQLite no lugar do JSON
-- Testes automatizados para `calcular_valor` e `placa_valida`
-- Tipos de veículo com tabelas de preço diferentes
